@@ -1,0 +1,153 @@
+:root {
+    --color-one: #e6e6ff;
+    --color-two: #007BFF;
+    --color-three: #b3b3ff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar.white {
+    background: white !important;
+    font-size: 15px;
+    color: black !important;
+}
+
+/* nav .navbar-nav li a{
+    color: white !important;
+} */
+
+.navbar {
+    color: white;
+    font-size: 15px;
+}
+
+.banner-image {
+    background-image: url("/image/banner.avif");
+    background-size: cover;
+    background-position: top center;
+}
+
+.card {
+    border: 1px solid var(--color-three);
+    margin-bottom: 20px;
+    transition: border 0.1s, transform 0.3s;
+}
+
+.card:hover {
+    border: 1px solid var(--color-two);
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.card .card-body h2 {
+    color: var(--color-two);
+}
+
+.card img:hover {
+    opacity: 0.6;
+}
+
+.card-p {
+    color: var(--color-three);
+}
+
+.card-p i {
+    color: var(--color-two);
+    margin-right: 8px;
+}
+
+.gotop {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    /* background: #007BFF; */
+    bottom: 55px;
+    right: 50px;
+    text-decoration: none;
+}
+
+
+@media (min-width:375px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    img.mobile {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .hello {
+        width: 100%;
+        height: 70vh'
+
+    }
+}
+
+@media (min-width: 375px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .gotop {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        /* background: #007BFF; */
+        bottom: 10px;
+        right: 10px;
+        text-decoration: none;
+    }
+
+    /*1rem = 16px*/
+}
+
+@media (min-width: 390px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 544px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    img.mobile {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    img.mobile {
+        max-width: 100%;
+        height: auto;
+    }   
+}
